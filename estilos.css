@@ -1,5 +1,6 @@
 :root{
-    --colornaranja: orangered;
+    /*falta agregar variables de colores*/
+    --blanco: #FFF;
 }
 *,::after,::before{
     padding: 0;
@@ -149,8 +150,8 @@ header {
     display: none;
 }
 
-@media screen and (max-width:480px){
-
+/* @media screen and (max-width:480px){ */
+@media screen and (min-width:300px)and (max-width: 750px) {
 
     header {
         justify-content: space-between;
@@ -159,7 +160,6 @@ header {
     .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 1.25rem;
         background-color: transparent;
         cursor: pointer;
     }
@@ -169,8 +169,9 @@ header {
         z-index: 0;
     }
 
-    .cerrar-menu {
+    .cerrar-menu i{
         color: #fff;
+        font-size: 1.5rem;
     }
     .logo{
        display: flex;
@@ -178,17 +179,22 @@ header {
     .nav {
         opacity: 0;
         visibility: hidden;
+
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 1rem;
         position: absolute;
         top: 0;
         right: 0;
+        left: 0;
         bottom: 0;
-        background-color: #1c1c1c;
+        background-color: #1c1c1cf3;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 10;
     }
 
     .nav.visible {
@@ -198,15 +204,16 @@ header {
 
     .nav-list {
         flex-direction: column;
-        align-items: end;
     }
 
     .nav-list li a {
+        font-size: 1.5rem;
         color: #ecececec;
     }
-
+    .nav-list li a:active{
+        border-bottom: #8c90ab;
+    }
 }
-
 
 /*/////////////////CONTENIDO PRINCIPAL/////////*/
 .contenido_principal{
@@ -216,7 +223,6 @@ header {
     place-items:center ;
 }
 .titulos_principal{
-    /* background-color: red; */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -252,6 +258,7 @@ header {
 .btn_principal{
     margin-top: 3rem;
     display: flex;
+    justify-content: center;
     gap: 20px;
     text-align: center;
     flex-wrap: wrap;
@@ -270,11 +277,7 @@ header {
     font-size: 1.5rem;
 }
 
-
-
-
     @media screen and (max-width:480px){
-
     .contenido_principal{
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
@@ -471,9 +474,6 @@ header {
         padding: 1rem;
     }
 }
-
-
-
 
 
 /* //////////   boton scroll /////////*/
@@ -744,13 +744,10 @@ header {
     display: flex;
     width: 100%;
     text-align: center;
-    /* justify-content: space-between; */
     align-items: center;
 
 }
 .socialwhatsapp img, .socialinstagram img{
-    /* width:  */
-    /* height: 330px; */
     border-radius: 1rem;
     transition: all .2s ease-in-out;
 
@@ -847,9 +844,6 @@ header {
     }
 
     }
-
-
-
 
 /*////////////   GALERIA        ///////////////*/
 #galeria-escuela{
@@ -1006,7 +1000,6 @@ swiper-container {
     flex-direction: column;
     text-align: center;
     padding: 16px 45px;
-    /* background-color: #f5f7fa; */
     color: #8c90ab;
     letter-spacing: .1rem;
     border-bottom: 1px solid #d6d4e2;
@@ -1061,7 +1054,6 @@ swiper-container {
 .container .content .box .text h3 {
     font-size: 30px;
     color: #8a2be2;
-    /* margin: 16px 0; */
     margin-bottom: 1rem;
 }
 .container .content .box .text p {
@@ -1259,8 +1251,11 @@ swiper-container {
 #footer .contenido-footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* place-content: center; */
-    /* text-align: center; */
+    place-content: center;
+}
+.columna-menu,.columna-redes{
+    display: grid;
+    place-content: center;
 }
 .columna-menu .footer-nav li{
     width: 30%;
@@ -1335,7 +1330,6 @@ swiper-container {
     margin-bottom: .1rem;
 }
 @media screen and (min-width:310px)and (max-width: 900px) {
-
 /* @media screen and (max-width:480px){ */
     #footer{
         padding: 1rem;
@@ -1367,11 +1361,7 @@ swiper-container {
         margin-bottom: 2rem;
     }
     .columna-redes .qrsociales{
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
         margin-bottom: 1rem;
-        border: 1px solid red;
         
     }
     .columna-redes .qrsociales .socialwhatsapp img,
