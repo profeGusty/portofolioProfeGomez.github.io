@@ -406,7 +406,6 @@ header {
     position: relative;
     padding: 1rem;
     height: 600px;
-    /* border: 1px solid red; */
 }
 
 .parrafos{
@@ -455,12 +454,10 @@ header {
     .contenido-sobre-mi p{
         font-size: 1rem;
         margin-top: 3rem;
-        /* border: 1px solid red; */
 
     }
    
     .parrafos{
-        border: 1px solid red;
         flex-direction: column;
         gap: 1rem;
         font-size: .90rem;
@@ -492,7 +489,7 @@ header {
         }
 
         .parrafos{
-            padding: .9rem;
+            padding: .5rem;
             border: 1px solid red;
             flex-direction: column;
             justify-content: center;
@@ -501,6 +498,16 @@ header {
             font-size: .8rem;
             top: 0;
             bottom: 0;
+        }
+        .parrafo{
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center; */
+            height: auto;
+            line-height: 1.2;
+            padding: .3rem;
+            background-color: rgba(137, 43, 226, 0.596);
         }
 
 
