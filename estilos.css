@@ -247,7 +247,9 @@ header {
 .img_principal{
     width: 430px;
     height: 430px;
-    background-image: url(/img/fotoperfil.jpeg);
+    background-image: url(/img/perfil1.jpg);
+    rotate: 40deg;
+    background-position:top right;
     background-size: cover;
     border-radius: 50%;
     -webkit-box-shadow: 1px 1px 21px 21px rgba(72,72,72,0.86);
@@ -306,8 +308,8 @@ header {
     }
     .img_principal{
         grid-area: imagen;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         margin-top: 20px;
      }
      .btn_principal{
@@ -441,7 +443,6 @@ header {
 
     .parrafos{
         padding: .5rem;
-        border: 1px solid blue;
         flex-direction: column;
         justify-content: center;
         align-items: center;
