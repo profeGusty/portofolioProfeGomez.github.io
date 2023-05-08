@@ -123,7 +123,6 @@ header {
     justify-content: start;
     padding: 1rem;
     gap:3rem;
-    /* z-index: 2; */
 }
 .logo{
     color: #fff;
@@ -150,7 +149,6 @@ header {
     display: none;
 }
 
-/* @media screen and (max-width:480px){ */
 @media screen and (min-width:300px)and (max-width: 750px) {
 
     header {
@@ -377,7 +375,6 @@ header {
     margin-left: .5rem;
 }
 
-/* @media screen and (max-width:480px){ */
     @media screen and (min-width:300px)and (max-width: 750px) {
     #servicios{
     grid-template-columns:1fr;
@@ -430,9 +427,6 @@ header {
     text-transform: uppercase;
 }
 
-/* @media screen and (max-width:380px){
-
-} */
 @media screen and (max-width:399px){
     .contenido-sobre-mi p{
         font-size: 1rem;
@@ -468,7 +462,7 @@ header {
     }
 
 }
-    @media screen and (min-width:400px)and (max-width: 768px) {
+    @media screen and (min-width:400px)and (max-width: 851px) {
     
      #sobre-mi{
         padding-bottom: 1rem;
@@ -575,16 +569,13 @@ header {
 
 #skills{
     margin-top: 120px;
-    /* padding-bottom: 3rem; */
     margin-bottom: 3rem;
-    /* text-align: center; */
     display: flex;
     justify-content:space-around;
     align-items: center;
     padding: 2rem;
 }
 #skills h2{
-    /* flex-grow: 1; */
     font-size: 5rem;
     font-weight: 700;
     border-bottom: 10px solid blueviolet;
@@ -631,7 +622,6 @@ header {
     background: linear-gradient(90deg, blueviolet, rgb(199, 50, 222) 100%);
     transition: width .5s linear;
 }
-/* @media screen and (max-width:480px){ */
     @media screen and (min-width:350px)and (max-width: 850px) {
 
        #skills{
@@ -771,18 +761,20 @@ header {
     justify-content: space-between;
     padding: 1rem;
     gap: 1rem;
-    margin: 0 auto;
 }
 
 #contacto .qrsociales .socialwhatsapp, .socialinstagram{
     display: flex;
     width: 100%;
     text-align: center;
+    justify-content: space-around;
     align-items: center;
 
 }
 .socialwhatsapp img, .socialinstagram img{
     border-radius: 1rem;
+    width: 300px;
+    height: 300px;
     transition: all .2s ease-in-out;
 
 }
@@ -803,9 +795,8 @@ header {
     margin-left: 2rem;
 }
 
-@media screen and (min-width:310px)and (max-width: 900px) {
+@media screen and (min-width:310px)and (max-width: 950px) {
 
-/* @media (max-width: 480px){ */
     #contacto{
         padding: 1rem;
     }
@@ -868,8 +859,8 @@ header {
 
     }
     .socialwhatsapp img, .socialinstagram img{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         border-radius: .4rem;
     }
 
@@ -918,7 +909,6 @@ header {
     line-height: 2.2;
 }
 @media screen and (min-width:310px)and (max-width: 900px) {
-/* @media screen and (max-width:480px){ */
     #galeria-escuela .contenido-galeria{
         padding: 1rem;
         flex-direction: column;
@@ -978,7 +968,6 @@ swiper-container {
 
 @media screen and (min-width:310px)and (max-width: 900px) {
 
-/* @media screen and (max-width:480px){ */
     #proyectos-escolares{
         height: auto;
         text-align: center;
@@ -1007,16 +996,13 @@ swiper-container {
 #detalle-servicios h2{
     text-align: center;
     margin-bottom: 3rem;
-    /* border-bottom: 5px solid blueviolet;
-    border-radius: 10px; */
+    border-radius: 10px;
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* max-width: 960px;
-    min-width: 920px; */
     width: 90%;
     margin: 2.5rem auto;
 }
@@ -1099,7 +1085,6 @@ swiper-container {
 }
 
 @media screen and (min-width:310px)and (max-width: 900px) {
-/* @media screen and (max-width:480px){ */
     #detalle-servicios{
         margin: 1rem;
         padding: .5rem;
@@ -1240,7 +1225,6 @@ swiper-container {
  }
 
  @media screen and (min-width:310px)and (max-width: 650px) {
-/* @media screen and (max-width:480px){ */
     #proyectos{
         margin-top: 3rem;
     }
@@ -1364,7 +1348,6 @@ swiper-container {
     margin-bottom: .1rem;
 }
 @media screen and (min-width:310px)and (max-width: 900px) {
-/* @media screen and (max-width:480px){ */
     #footer{
         padding: 1rem;
     }
