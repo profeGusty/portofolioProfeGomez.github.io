@@ -433,7 +433,41 @@ header {
 /* @media screen and (max-width:380px){
 
 } */
+@media screen and (max-width:310px){
+    .contenido-sobre-mi p{
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+    .contenido-sobre-mi h2{
+        font-size: 1.5rem;
+        display: block;
+        border-bottom: 5px solid blueviolet;
+        border-radius: 10px;
+    }
 
+    .parrafos{
+        padding: .5rem;
+        border: 1px solid blue;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        font-size: .8rem;
+        top: 0;
+        bottom: 0;
+    }
+    .parrafo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 150px;
+        line-height: 1.2;
+        padding: .3rem;
+        background-color: rgba(137, 43, 226, 0.596);
+    }
+
+}
     @media screen and (min-width:370px)and (max-width: 900px) {
     
      #sobre-mi{
@@ -476,42 +510,7 @@ header {
     }
   
     }
-    @media screen and (max-width:369px){
-        .contenido-sobre-mi p{
-            font-size: 1rem;
-            margin-top: .5rem;
-        }
-        .contenido-sobre-mi h2{
-            font-size: 1.5rem;
-            display: block;
-            border-bottom: 5px solid blueviolet;
-            border-radius: 10px;
-        }
-
-        .parrafos{
-            padding: .5rem;
-            border: 1px solid red;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: .5rem;
-            font-size: .8rem;
-            top: 0;
-            bottom: 0;
-        }
-        .parrafo{
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center; */
-            height: auto;
-            line-height: 1.2;
-            padding: .3rem;
-            background-color: rgba(137, 43, 226, 0.596);
-        }
-
-
-    }
+   
 
 
 /* //////////   boton scroll /////////*/
