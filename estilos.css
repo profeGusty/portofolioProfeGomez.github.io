@@ -433,7 +433,7 @@ header {
 /* @media screen and (max-width:380px){
 
 } */
-@media screen and (max-width:310px){
+@media screen and (max-width:399px){
     .contenido-sobre-mi p{
         font-size: 1rem;
         margin-top: .5rem;
@@ -468,7 +468,7 @@ header {
     }
 
 }
-    @media screen and (min-width:370px)and (max-width: 900px) {
+    @media screen and (min-width:400px)and (max-width: 768px) {
     
      #sobre-mi{
         padding-bottom: 1rem;
