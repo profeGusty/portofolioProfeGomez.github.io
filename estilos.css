@@ -279,6 +279,7 @@ header {
 
     @media screen and (max-width:480px){
     .contenido_principal{
+        margin-top: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
         grid-template-areas: "titulo"
@@ -308,9 +309,9 @@ header {
     }
     .img_principal{
         grid-area: imagen;
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        margin-top: 1rem;
      }
      .btn_principal{
         margin-top: 50px;
